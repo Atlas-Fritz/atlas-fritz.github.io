@@ -1,13 +1,14 @@
 // ============================================================
 // THIS IS THE ONLY FILE YOU EDIT TO ADD NEW WORK.
-// To add a paper: copy one { ... }, block inside ENTRIES,
-// paste it at the top of the list, and change the text.
 //
-// Files:
-//   pdf   -> put the PDF in the "pdfs" folder, e.g. "pdfs/my-paper.pdf"
-//   cover -> put an image in the "covers" folder, e.g. "covers/my-paper.jpg"
-//            (save the first page of the PDF as a JPG, or use the infographic itself).
-//            Leave it "" and the site draws a plain coloured cover for you.
+// To add a new piece:
+//   1. Put its PDF in the "pdfs" folder.
+//   2. Put its cover image in the "covers" folder (optional).
+//   3. Copy the TEMPLATE block below, paste it at the TOP of ENTRIES,
+//      and change the text. Do not forget the comma between blocks.
+//
+// The newest date is shown biggest at the top and first in the grid.
+// When you add a newer piece, the older ones move one place to the right.
 // ============================================================
 
 const SITE = {
@@ -34,48 +35,28 @@ const TOPICS = [
   }
 ];
 
-// "type" can be: Paper, Article, Infographic, Brief (or anything you like).
-// "date" must be written as YYYY-MM-DD.
-// Leave "pdf" empty ("") and the link will say "PDF coming soon".
+// TEMPLATE: copy the lines below (without the // at the start), paste at the top of ENTRIES, fill in.
+//
+//   {
+//     title: "Title of the piece",
+//     authors: "First Author, Second Author",
+//     topic: "carbon",                      <- "carbon" or "power"
+//     type: "Brief",                        <- Paper, Brief, Article or Infographic
+//     date: "2026-11-20",                   <- YYYY-MM-DD. The newest date goes first.
+//     summary: "Two short sentences: what it asks and what it finds.",
+//     pdf: "pdfs/file-name.pdf",
+//     cover: "covers/file-name.jpg"         <- leave "" for a plain coloured cover
+//   },
+
 const ENTRIES = [
   {
-    title: "Sample entry: How a carbon price changes who pays",
-    authors: "Author One, Author Two",
-    topic: "carbon",
-    type: "Paper",
-    date: "2026-10-20",
-    summary: "This is a sample entry. Replace it with your real paper. Write two short sentences that tell the reader what the paper asks and what it finds.",
-    pdf: "",
-    cover: ""
-  },
-  {
-    title: "Sample entry: Reading a power plant benchmark",
-    authors: "Author Three",
+    title: "Indonesia’s 2025 Power Generation Report Card: Renewables Are Growing, but Fossil Fuels Are Growing Faster",
+    authors: "Mufty Putratama Sumarto",
     topic: "power",
     type: "Brief",
-    date: "2026-10-05",
-    summary: "This is a sample entry. Replace it with your real piece. Keep the summary to about two sentences so the layout stays tidy.",
-    pdf: "",
-    cover: ""
-  },
-  {
-    title: "Sample entry: Carbon markets in one picture",
-    authors: "Author Two",
-    topic: "carbon",
-    type: "Infographic",
-    date: "2026-09-12",
-    summary: "This is a sample entry for an infographic. For an infographic, use the image itself as the cover.",
-    pdf: "",
-    cover: ""
-  },
-  {
-    title: "Sample entry: Where the grid is heading",
-    authors: "Author One, Author Four",
-    topic: "power",
-    type: "Article",
-    date: "2026-08-30",
-    summary: "This is a sample entry. Use it to see how a longer title and two authors look on the home page and in the topic list.",
-    pdf: "",
-    cover: ""
+    date: "2026-11-05",
+    summary: "Renewable capacity grew by 1,836 MW in 2025, beating the 1,677 MW plan, but the surplus came from industry-owned captive plants rather than the utility’s plan. Fossil capacity grew by 5,014 MW, about 41% above plan, widening the gap with renewables to 76.1 GW.",
+    pdf: "pdfs/energy-insight-brief-01-indonesia-2025-power-report-card.pdf",
+    cover: "covers/energy-insight-brief-01.jpg"
   }
 ];

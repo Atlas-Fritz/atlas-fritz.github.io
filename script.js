@@ -154,7 +154,7 @@
               "</li>"
             );
           }).join("")
-        : '<li class="empty">No results. Try a different search.</li>';
+        : '<li class="empty">' + (all.length ? "No results. Try a different search." : "Nothing published here yet. Check back soon.") + "</li>";
     }
     document.getElementById("q").addEventListener("input", draw);
     document.getElementById("type").addEventListener("change", draw);
